@@ -1,0 +1,161 @@
+/* fonts */
+.im-fell-english-sc-regular {
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .yuji-syuku-regular {
+    font-family: "Yuji Syuku", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+/* variable personalizadas */
+:root{
+    --c-dark: #212529;
+    --c-brand: #4e57d4;
+    --c-bran-light:#6970dd;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body:#727272;
+    --font-base: "ClashDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+}
+
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    font-family: "Yuji Syuku", serif;
+}
+
+h1, h2, h3, h4, h5, h6
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-brand-rgb);
+    transition: var(--transition);
+}
+p{
+    color: var(--c-dark);
+}
+a.hover{
+    color: var(--c-brand-light);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.theme-shadow{
+    box-shadow: var(--box-shadow);
+}
+
+/*  */
+.navbar-all{
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.navbar-all img{
+    height: 70px;
+}
+.navbar-all .nav-link{
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255); /* Cambia el color del texto a blanco */
+  }
+
+.navbar-all button{
+    font-weight: 300;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.navbar-all a{
+    border-radius: 14px;
+    
+}
+
+.navbar-all a:hover{
+    background-color: #ef3b3b;
+}
+
+
+/* HERO */
+.hero{
+    width: 100rem;
+}
+
+#hero button{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+/* CONTACT */
+.btn-send{
+    background-color: #2db036;
+    color: #ffffff;
+    border-radius: 14px;
+    padding: 7px 0 7px 0;
+    border-style: none;
+}
+.btn-send:hover{
+    background-color: #0b8007;
+    font-weight: 600
+}
+#contact{
+    position: relative;
+    z-index: 2;
+}
+
+#contact::after{
+    content: "";
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(rgba(0, 0 ,0, 0.507), rgba(0,0,0,0.438)), url(https://images.pexels.com/photos/1447092/pexels-photo-1447092.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+}
+
+#contact input{
+    border-color: #2b3239;
+}
+#contact textarea{
+    border-color: #2b3239;
+    resize: none;
+}
+
+/* LA LISTA */
+
+.hero img{
+    width: 40px;
+}
+
+.hero button{
+    border-radius: 5px;
+    padding: 10px;    
+}
+
+.hero button:hover{
+    background-color: #0b8007;
+    color: #ffffff;
+}
